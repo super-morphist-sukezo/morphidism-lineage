@@ -143,9 +143,11 @@ Ampfinityは、AmpersandとInfinityを接続し、MorphidismのAndを反復・�
 
 **Period:** 2026-02
 
-**Evidence:** `Contemporaneous Record`, `Agent Reconstruction`, `Human Confirmation`（存在の確認）
+**Evidence:** `Contemporaneous Record`, `Git Record`（nza-arithmetic 実装・テスト）, `Agent Reconstruction`, `Human Confirmation`（存在の確認）
 
-「5-5=0は局所的な状態ラベルであり、宇宙全体では『他所への移動』である。ゼロと負数は実在せず、宇宙は閉じた無限循環系である」という、Steward発の独立した仮説。Workspace内に小論文とシミュレーション、ampfinityio に N-Zero 論文PDFが存在する。
+「5-5=0は局所的な状態ラベルであり、宇宙全体では『他所への移動』である。ゼロと負数は実在せず、宇宙は閉じた無限循環系である」という、Steward発の独立した仮説。ampfinityio に N-Zero 論文PDFが存在する。
+
+実装として、[`nza-arithmetic`](https://github.com/super-morphist-sukezo/nza-arithmetic)（2026-02-24作成、PyPI公開）が存在する。`NZA(5) - NZA(5) -> 0.0_local + ∞_universe`（局所ゼロでも宇宙総量は保存）という演算を Python パッケージとして実装し、テストとCIを持つ。
 
 **Inherited question:** 「失われたように見えるものは、本当に消えたのか、それとも移動したのか」。
 
