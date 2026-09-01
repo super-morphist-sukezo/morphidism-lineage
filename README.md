@@ -26,4 +26,4 @@ Morphidism から aperture-mesh-protocol まで、思想と実装がどうつな
 ## 使い方
 
 - [LINEAGE.md](LINEAGE.md) — 系譜の詳細な記録（進展のたびに加筆される）
-- 更新は事実の記録のみ。解釈や空想は対話の場で。
+- 更新は「事実、帰属付き解釈、Open Holdをラベル付きで記録」。Evidence labels は LINEAGE.md §2 参照。
