@@ -139,6 +139,20 @@ Ampfinityは、AmpersandとInfinityを接続し、MorphidismのAndを反復・�
 
 **Boundary:** これらのApplicationは、ApertureのConsent、Constitution、Tripwire、Appeal、Exitを実装したものではない。思想を操作可能なUIへ変換した前史として扱う。
 
+### Adjacent theory: N-Zero Arithmetic（宇宙ゼロなし理論）
+
+**Period:** 2026-02
+
+**Evidence:** `Contemporaneous Record`, `Agent Reconstruction`, `Human Confirmation`（存在の確認）
+
+「5-5=0は局所的な状態ラベルであり、宇宙全体では『他所への移動』である。ゼロと負数は実在せず、宇宙は閉じた無限循環系である」という、Steward発の独立した仮説。Workspace内に小論文とシミュレーション、ampfinityio に N-Zero 論文PDFが存在する。
+
+**Inherited question:** 「失われたように見えるものは、本当に消えたのか、それとも移動したのか」。
+
+**Influence:** Monku_Ai の「残余を保持する」、feedmonk の「文句を捨てずに変換する」、Aperture の「Draft/Hold は捨て場ではない」と同じ構造を、物理学の比喩で先取りしていたと解釈できる。
+
+**Boundary:** N-Zero Arithmetic は形式数学の証明でも、Aperture の採用済み Invariant でもない。独立した隣接仮説として記録する。物理法則の主張は検証されていない。
+
 ### Stage 5: Monku_Ai
 
 **Period:** Repository created 2026-08-03
