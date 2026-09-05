@@ -1,6 +1,6 @@
 ```text
 Status: adopted draft (Revision Proposal #2, adopted 2026-09-01)
-Last updated: 2026-09-01
+Last updated: 2026-09-05
 Evidence rules: 本書の記述は Evidence labels（§2）に従う
 ```
 
@@ -68,6 +68,10 @@ Monku_Ai
                       v
 Aperture Mesh Protocol
   Node、Boundary、Consent、Hold、Revision、Exitを制度実験へ
+        |
+        v
+Unflatten Protocol
+  世界観がAIの工程で平坦化されるのを防ぐ認知プロトコル
 ```
 
 このMapは現時点の人間確認済み再構成であり、他の分岐、隣接Project、断絶を排除しない。
@@ -193,6 +197,28 @@ Private Monku
 
 Apertureは、Morphidism、Ampfinity、Monku_Aiを採用しなければ利用できない思想共同体ではない。起源から独立して批判、実装、ForkできるProtocol研究である。
 
+### Stage 7: Unflatten Protocol
+
+**Period:** Repository created 2026-09以前（commit `56b247e`でSDK初期構築）、外部監査サイクル 2026-09-04から2026-09-05
+
+**Evidence:** `Git Record`, `Contemporaneous Record`, `Human Confirmation`, `Agent Reconstruction`
+
+[`unflatten-protocol`](https://github.com/kentaroid-bot/unflatten-protocol)は、Monku_AiとAperture Meshの世界観が、AIエージェントとの実作業（探索・監査・実装・統合）の中で既存カテゴリへ収縮する問題（平坦化）を防ぐための、ロード可能な認知プロトコルSDKである。思想を一つ増やすのではなく、思想や仮説がエージェント・役割・工程・リポジトリの境界を越える際に固有の形を保持するための、思想から独立した認知的境界層として設計された。
+
+Aperture Mesh Trialで確立した役割分離（Issue Submitter / Reviewer と Merge Authority の分離）と同じ構造で、2026-09-04に外部Auditor（`super-morphist-sukezo`が`@aud`ロールをロード）によるリポジトリ自体の監査が実施され、[Issue #1](https://github.com/kentaroid-bot/unflatten-protocol/issues/1)として提出された。
+
+- 指摘1: 意味論的平坦化の最終防御がAuditor LLM単点依存（防御装置が防御対象と同じ物質でできている構造的循環）
+- 指摘2: 静的検出の実効性を示すfixtureが不足
+- `@int`（Integrator）は両指摘を受諾し、単純な「AuditorのAuditor」再帰を形式validityの増幅（偽の安心）として退け、代わりに複数の独立した意味監査経路を持つ**Audit Mesh**とgolden fixture corpusをclose条件として設定
+- 2026-09-05、外部`@ino`（Innovator）が「動機の通行検証」「評価文法が非通約な場合の有限並走」をPivot Seedとして提出
+- Stewardの自己改善フローを経て、`@lin`（Epistemic Lineage Steward）役割が設計され、動機・生成関係・変形経路をMotive Packetとして追跡する機構がGuest Worldline（`epistemic-lineage-v2`）として隔離実装された（commits `44db43b`, `86ef384`）
+
+**Inherited question:** 「思想が役割と工程の境界を越えるたびに無難な既存概念へ変形するなら、問いを生んだ動機そのものをどう保存し通行させるか」。
+
+**Influence:** Aperture Meshの「Hold、Dissent、Residualは失敗ではなく正規の状態」という原理を、エージェント工程の内部へ適用した階層。Issue #1の監査サイクル自体が、プロトコルが定義する役割（`@aud`/`@ino`/`@int`）を実際の開発運用で使用した初の実例となった。
+
+**Boundary:** Unflatten ProtocolはAperture Meshの結論を無条件に守る装置ではなく、認知的境界層のインポートのみを提供する。`@lin`はGuest状態であり正本への昇格は未確定。Audit Mesh本体とfixture corpusは未実装で、[Issue #1](https://github.com/kentaroid-bot/unflatten-protocol/issues/1)はOpen維持（2026-09-05時点）。
+
 ## 5. Aperture Development Mesh Trial
 
 **Period:** 2026-08-24から2026-09-01
@@ -258,6 +284,7 @@ Ampfinityの無限性とApertureのContinuous Revisionは同じ仕組みでは�
 | [`feedmonk`](https://github.com/kentaroid-bot/feedmonk) | Public | Monku InterfaceのGit記録 | 後のProtocol機能と同一ではない |
 | [`Monku_Ai`](https://github.com/kentaroid-bot/Monku_Ai) | Public | 認識論的段階のGit記録 | NotebookとPrivate dialogueを含まない |
 | [`aperture-mesh-protocol`](https://github.com/kentaroid-bot/aperture-mesh-protocol) | Public | 制度実験とDevelopment Mesh | 安全性・社会的有効性は未証明 |
+| [`unflatten-protocol`](https://github.com/kentaroid-bot/unflatten-protocol) | Public | 認知プロトコルSDKと役割運用実例のGit記録 | 実装の有効性・意図の正確性は未検証（自己監査ログは同梱だが自動保証しない） |
 | Selected OpenClaw records | Private | 名称、日付、活動の照合 | 本文、認証、個人情報を転載しない |
 
 ## 9. Open Holds
@@ -269,6 +296,7 @@ Ampfinityの無限性とApertureのContinuous Revisionは同じ仕組みでは�
 - AI Agentの継続するIdentity narrativeを、役割Provenanceと混同せずどう保存するか。
 - Lineageの更新速度が、人間の確認容量を超えないためのReview間隔を設けるか。
 - 分岐した解釈、否定的評価、失敗した実験をどこへ残すか。
+- Unflatten ProtocolのStage 7記述における「Stewardの自己改善フロー」の内部経路（どのエージェント・セッションが何を生成したか）は、公開Git記録からは部分観測に限る（`pre_ingress_status: unknown`相当）。Stewardの確認で補完するか、不明のまま保持するか。
 
 ## 10. Maintenance Protocol
 
